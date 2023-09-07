@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+.para-text {
+  color: var(--ffffff, #FFF);
+  opacity: 0.5;
+  font-weight: 400;
+}
+
+.bannerColor {
+  background: rgb(147, 125, 161);
+  background: linear-gradient(90deg, rgba(147, 125, 161, 1) 11%, rgba(25, 165, 108, 1) 47%);
+}
+
+.rounded-full {
+  height: 373px;
+  width: 373px;
+}
+.accordianHeading {
+  background: rgb(147, 125, 161);
+  background: linear-gradient(90deg, rgba(147, 125, 161, 1) 11%, rgba(25, 165, 108, 1) 47%);
+}
+
+@media (max-width: 1200px) {
+  .rounded-full {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media (max-width:1025px) {
+  .rounded-full {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutUsImgPasrent {
+    height: 22rem !important;
+  }
+
+  .accordianHeading {
+    background: #000;
+  }
+}
+
+.scroll-banner-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.scroll-banner-content {
+  display: inline-block;
+  animation: move-right-to-left 10s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* use this one to move from right to left direction */
+@keyframes move-right-to-left {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
