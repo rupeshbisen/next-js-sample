@@ -40,7 +40,7 @@ export default function Navbar({ navClick, onNaveClick }: NavProps) {
                     }
                 </button>
                 <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-                    <div>hello</div>
+                   
                 </div>
             </div>
         </nav>
