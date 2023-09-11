@@ -12,16 +12,15 @@ export default function AboutUs() {
   }
   console.log(imageHover);
   return (
-    <div className='p-4 md:p-8 lg:px-16 lg:pt-20 lg:pb-36'>
-      <div className='max-w-7xl mx-auto relative aboutUsImgPasrent' style={{
+    <div className='p-4 md:p-8 lg:px-16 lg:pt-20 lg:pb-36 aboutUsImgPasrent' id='aboutUs'>
+      <div className='max-w-7xl mx-auto relative  transition-all' style={{
         backgroundImage: imageHover ? `url(${image2.src})` : '',
         backgroundSize: 'cover',
-        height:'470px'
+        height: '470px'
       }}>
         <div className='flex flex-wrap justify-between' >
           <div className=''>
-            <h1 className='uppercase  text-4xl lg:text-7xl text-white  font-extrabold '>About </h1>
-            <h1 className='uppercase  text-4xl lg:text-7xl text-white  font-extrabold '>Us</h1>
+            <h1 className='mb-4 text-4xl  md:text-5xl lg:text-[7.5rem] font-bold tracking-tight leading-none  text-white uppercase '>About <br />Us </h1>
 
             <span className='text-white'>Lorem</span>
             <span className='text-white'>Lorem</span>
@@ -31,7 +30,7 @@ export default function AboutUs() {
             <p className='para-text max-w-xl'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis modi ad magni eos deleniti, nostrum repellendus tenetur laudantium beatae minima eveniet nihil consequuntur nesciunt et iste aspernatur? Architecto, fugiat ad nesciunt libero debitis esse provident corrupti repellat accusamus quis voluptatibus rem id sunt unde voluptas sit alias ab velit eligendi!</p>
           </div>
         </div>
-        <div className='rounded-full  h-full ms-20 md:ms-2 lg:ms-32 absolute md:top-16 lg:top-24 '
+        <div className='rounded-full  h-full ms-20 md:ms-2 lg:ms-40 absolute md:top-16 lg:top-28 transition-all '
           onMouseEnter={onImageHover} onMouseLeave={onImageHoverOut}
           style={{
             backgroundImage: !imageHover ? `url(${image2.src})` : '',

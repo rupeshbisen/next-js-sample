@@ -26,7 +26,7 @@ export default function CardComponent({
                 height={410} // Set the desired height
                 className='mb-20 lg:mb-10'
             /> : ''}
-            <h3 className='uppercase text-lg lg:text-2xl text-white font-semibold'>{title}</h3>
+            <h3 className='uppercase text-lg text-white font-bold lg:leading-[0.75rem]  text-[1.42rem] mb-3  mt-5'>{title}</h3>
             <p className='para-text mb-8 text-lg'>{text}</p>
             <Image
                 src={icon}

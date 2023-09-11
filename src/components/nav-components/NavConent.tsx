@@ -7,13 +7,13 @@ export default function NavConent() {
             <div className=' p-3 ' style={{height:'87%',paddingTop:'50%'}}>
                 <div className='uppercase text-lg text-white'>
                     <div className='row'>
-                        <div className='col'><a href="#">Lorem ipsum</a></div>
+                        <div className='col'><a href="/#home">Home</a></div>
                     </div>
                     <div className='row'>
-                        <div className='col'><a href="#">Lorem ipsum</a></div>
+                        <div className='col'><a href="/#aboutUs">About</a></div>
                     </div>
                     <div className='row'>
-                        <div className='col'><a href="#">Lorem ipsum</a></div>
+                        <div className='col'><a href="/#dolar-detail">Dolor</a></div>
                     </div>
                     <div className='row'>
                         <div className='col'><a href="#">Lorem ipsum</a></div>

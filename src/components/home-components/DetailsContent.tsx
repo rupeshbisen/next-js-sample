@@ -3,25 +3,24 @@ import React from 'react'
 import CardComponent, { CardProps } from './CardComponent'
 
 export default function DetailsContent() {
-  const cardData:CardProps[] = [
+  const cardData: CardProps[] = [
     {
       title: "Lorem ipsum dolor",
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus suscipit hic provident? Deserunt natus aspernatur fugiat ea doloribus necessitatibus nemo id, et dicta ullam perspiciatis, eum quidem, expedita rem. A repellendus rerum cum, cumque ut id ipsum, perspiciatis consectetur blanditiis tempore nam recusandae amet reprehenderit nulla deserunt necessitatibus. Minima laudantium ut distinctio? ",
       icon: "/shield-tick.svg",
-      img:''
+      img: ''
     },
     {
       title: "Dolor sit Amet",
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus suscipit hic provident? Deserunt natus aspernatur fugiat ea doloribus necessitatibus nemo id, et dicta ullam perspiciatis, eum quidem, expedita rem. A repellendus rerum cum, cumque ut id ipsum, perspiciatis consectetur blanditiis tempore nam recusandae amet reprehenderit nulla deserunt necessitatibus. Minima laudantium ut distinctio? ",
       icon: "/dataflow-03.svg",
-      img:''
+      img: ''
     }
   ]
   return (
-    <div className='p-4 md:p-8 lg:px-16 lg:pt-20 lg:pb-36'>
+    <div className='p-4 md:p-8 lg:px-16 lg:pt-20 lg:pb-36' id='dolar-detail'>
       <div className='max-w-7xl mx-auto '>
-        <h1 className='uppercase text-4xl lg:text-7xl  text-white  font-extrabold '>Lorem ipsum</h1>
-        <h1 className='uppercase text-4xl lg:text-7xl text-white  font-extrabold '>dolor set</h1>
+        <h1 className='mt-2  lg:mb-24 sm:mb-5 text-4xl font-bold text-white md:text-5xl lg:text-[7rem] dark:text-white uppercase md:w-9/12 xs:w-full'>Lorem ipsum dolor set</h1>
 
         <div className='flex flex-wrap gap-14 gap-y-10 mx-auto mt-14 lg:mt-20'>
           {

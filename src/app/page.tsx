@@ -19,18 +19,13 @@ export default function Home() {
         navClick={navClick}
         onNaveClick={onNaveClick}
       />
-      {!navClick &&
-        <React.Fragment>
-          <HomeComponent />
-          <AboutUs />
-          <ScrollingBanner />
-          <DetailsContent />
-          <Footer />
-        </React.Fragment>
-      }
-      {navClick &&
-        <NavConent />
-      }
+      <React.Fragment>
+        <HomeComponent />
+        <AboutUs />
+        <ScrollingBanner />
+        <DetailsContent />
+        <Footer />
+      </React.Fragment>
     </div>
   )
 }

@@ -16,6 +16,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(to bottom,
@@ -38,9 +42,14 @@ body {
   height: 373px;
   width: 373px;
 }
+
 .accordianHeading {
   background: rgb(147, 125, 161);
   background: linear-gradient(90deg, rgba(147, 125, 161, 1) 11%, rgba(25, 165, 108, 1) 47%);
+}
+
+.aboutUsImgPasrent {
+  animation: 'fadeIn' 3s;
 }
 
 @media (max-width: 1200px) {
@@ -50,7 +59,7 @@ body {
   }
 }
 
-@media (max-width:1025px) {
+@media (max-width:1120px) {
   .rounded-full {
     display: none;
   }

@@ -52,7 +52,7 @@ export default function Footer() {
         <div className=''>
             <div className='p-5 '>
                 <div className=' max-w-7xl mx-auto '>
-                    <h1 className='uppercase text-4xl lg:text-7xl text-white  font-extrabold'>Lorem ipsum dolor</h1>
+                    <h1 className='text-4xl max-sm:mb-8 font-extrabold tracking-wider leading-none md:text-5xl lg:text-[5.9rem] text-white uppercase'>Lorem ipsum dolor</h1>
                 </div>
             </div>
             <div className="mb-12">

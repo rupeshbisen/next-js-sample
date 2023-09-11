@@ -38,9 +38,9 @@ export default function HomeComponent() {
     ]
 
     return (
-        <div className='p-4 md:p-8 lg:px-16 lg:pt-20 lg:pb-36'>
+        <div className='p-4 md:p-8 lg:px-16 lg:pt-20 lg:pb-36' id='home'>
             <div className='max-w-7xl mx-auto '>
-                <h1 className='uppercase text-4xl lg:text-7xl text-white  font-extrabold '> lorem ipsum </h1>
+                <h1 className='uppercase text-4xl text-white mb-4 font-bold  md:text-5xl lg:text-[7.5rem] dark:text-white '> lorem ipsum </h1>
                 <div className='flex flex-wrap gap-14 gap-y-10  mx-auto'>
                     {
                         cardData.map((value, index) => (
