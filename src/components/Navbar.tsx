@@ -5,7 +5,14 @@ type NavProps = {
     navClick: boolean,
     onNaveClick: () => void
 }
+let innterHeight = 0;
 export default function Navbar({ navClick, onNaveClick }: NavProps) {
+    
+    React.useEffect(() => {
+        // window is accessible here.
+        console.log("window.innerHeight", window.innerHeight);
+        innterHeight = window.innerHeight;
+      }, []);
     return (
 
         <nav className="">
@@ -72,7 +79,7 @@ export default function Navbar({ navClick, onNaveClick }: NavProps) {
                 </div>
 
 
-                <div className={`w-full ${navClick ? '' : 'hidden'}`} style={{ height: window.innerHeight }}>
+                <div className={`w-full ${navClick ? '' : 'hidden'}`} style={{ height: innterHeight }}>
                     <div className='max-w-screen-2xl h-min:50  items-center justify-between mx-3 p-2 ' style={{ height: '87%', paddingTop: '50%' }}>
                         <div className='uppercase text-lg text-white'>
                             <div className='row leading-10'>
